@@ -2,12 +2,22 @@ using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 
 
 namespace Remote
 {
     public partial class Form1 : Form
     {
+
+        [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
+
+        bool mousedown;
+
         public Form1()
         {
             InitializeComponent();
@@ -52,5 +62,17 @@ namespace Remote
         {
             this.Close();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
     }
 }

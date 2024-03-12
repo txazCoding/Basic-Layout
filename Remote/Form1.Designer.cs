@@ -32,10 +32,11 @@
             button2 = new Button();
             button3 = new Button();
             mainpanel = new Panel();
+            label2 = new Label();
             button4 = new Button();
             panel1 = new Panel();
             label1 = new Label();
-            label2 = new Label();
+            panel2 = new Panel();
             mainpanel.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -84,8 +85,19 @@
             mainpanel.Controls.Add(label2);
             mainpanel.Location = new Point(187, 44);
             mainpanel.Name = "mainpanel";
-            mainpanel.Size = new Size(614, 407);
+            mainpanel.Size = new Size(580, 394);
             mainpanel.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft YaHei", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(281, 171);
+            label2.Name = "label2";
+            label2.Size = new Size(46, 25);
+            label2.TabIndex = 0;
+            label2.Text = "hi :)";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button4
             // 
@@ -122,27 +134,30 @@
             label1.TabIndex = 3;
             label1.Text = "Basic Layout";
             // 
-            // label2
+            // panel2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft YaHei", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(281, 171);
-            label2.Name = "label2";
-            label2.Size = new Size(46, 25);
-            label2.TabIndex = 0;
-            label2.Text = "hi :)";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            panel2.Location = new Point(-1, -1);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(802, 44);
+            panel2.TabIndex = 5;
+            panel2.Paint += panel2_Paint;
+            panel2.MouseDown += panel2_MouseDown;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            ControlBox = false;
             Controls.Add(button4);
             Controls.Add(mainpanel);
             Controls.Add(panel1);
+            Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.None;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
+            SizeGripStyle = SizeGripStyle.Hide;
             Text = "Form1";
             Load += Form1_Load;
             mainpanel.ResumeLayout(false);
@@ -162,5 +177,6 @@
         private Button button4;
         private Label label1;
         private Label label2;
+        private Panel panel2;
     }
 }
