@@ -34,6 +34,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = Color.White;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
             label1.Size = new Size(42, 15);

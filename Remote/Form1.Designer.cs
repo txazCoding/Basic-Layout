@@ -28,65 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            button1 = new Button();
-            button2 = new Button();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             mainpanel = new Panel();
             label2 = new Label();
             button4 = new Button();
             panel1 = new Panel();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            button5 = new Button();
+            guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            Button2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            linkLabel1 = new LinkLabel();
+            label1 = new Label();
             label4 = new Label();
             label3 = new Label();
-            button3 = new Button();
-            label1 = new Label();
+            button1 = new Guna.UI2.WinForms.Guna2GradientButton();
             panel2 = new Panel();
             button6 = new Button();
             mainpanel.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button1.BackColor = Color.FromArgb(64, 64, 64);
-            button1.BackgroundImageLayout = ImageLayout.None;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Tahoma", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(7, 118);
-            button1.Name = "button1";
-            button1.Size = new Size(175, 41);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button2.BackColor = Color.FromArgb(64, 64, 64);
-            button2.BackgroundImageLayout = ImageLayout.None;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Tahoma", 9.75F);
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(7, 162);
-            button2.Name = "button2";
-            button2.Size = new Size(175, 41);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
             // 
             // mainpanel
             // 
@@ -115,7 +82,7 @@
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(765, 8);
+            button4.Location = new Point(579, 9);
             button4.Name = "button4";
             button4.Size = new Size(26, 26);
             button4.TabIndex = 0;
@@ -125,133 +92,200 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(64, 64, 64);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(pictureBox4);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(button5);
+            panel1.Controls.Add(guna2GradientButton2);
+            panel1.Controls.Add(guna2GradientButton1);
+            panel1.Controls.Add(Button2);
+            panel1.Controls.Add(linkLabel1);
+            panel1.Controls.Add(label1);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(button1);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button3);
             panel1.Location = new Point(-1, -1);
             panel1.Name = "panel1";
             panel1.Size = new Size(188, 452);
             panel1.TabIndex = 4;
             // 
-            // pictureBox3
+            // guna2GradientButton2
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(10, 283);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(38, 35);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 10;
-            pictureBox3.TabStop = false;
+            guna2GradientButton2.Animated = true;
+            guna2GradientButton2.AnimatedGIF = true;
+            guna2GradientButton2.BorderRadius = 5;
+            guna2GradientButton2.CustomBorderColor = Color.FromArgb(224, 224, 224);
+            guna2GradientButton2.CustomizableEdges = customizableEdges1;
+            guna2GradientButton2.DisabledState.BorderColor = Color.DarkGray;
+            guna2GradientButton2.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2GradientButton2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2GradientButton2.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            guna2GradientButton2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2GradientButton2.FillColor = Color.Gray;
+            guna2GradientButton2.FillColor2 = Color.FromArgb(64, 64, 64);
+            guna2GradientButton2.FocusedColor = Color.FromArgb(64, 0, 64);
+            guna2GradientButton2.Font = new Font("Verdana", 9.75F);
+            guna2GradientButton2.ForeColor = Color.White;
+            guna2GradientButton2.HoverState.FillColor = Color.Gray;
+            guna2GradientButton2.HoverState.FillColor2 = Color.Gray;
+            guna2GradientButton2.Location = new Point(7, 316);
+            guna2GradientButton2.Name = "guna2GradientButton2";
+            guna2GradientButton2.PressedColor = Color.FromArgb(64, 0, 64);
+            guna2GradientButton2.PressedDepth = 50;
+            guna2GradientButton2.ShadowDecoration.BorderRadius = 10;
+            guna2GradientButton2.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
+            guna2GradientButton2.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2GradientButton2.Size = new Size(175, 41);
+            guna2GradientButton2.TabIndex = 13;
+            guna2GradientButton2.Text = "guna2GradientButton2";
+            guna2GradientButton2.Click += guna2GradientButton2_Click;
             // 
-            // pictureBox4
+            // guna2GradientButton1
             // 
-            pictureBox4.Image = Properties.Resources.icons8_codedatei_64;
-            pictureBox4.Location = new Point(10, 239);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(37, 35);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 9;
-            pictureBox4.TabStop = false;
+            guna2GradientButton1.Animated = true;
+            guna2GradientButton1.AnimatedGIF = true;
+            guna2GradientButton1.BorderRadius = 5;
+            guna2GradientButton1.CustomBorderColor = Color.FromArgb(224, 224, 224);
+            guna2GradientButton1.CustomizableEdges = customizableEdges3;
+            guna2GradientButton1.DisabledState.BorderColor = Color.DarkGray;
+            guna2GradientButton1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2GradientButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2GradientButton1.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            guna2GradientButton1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2GradientButton1.FillColor = Color.Gray;
+            guna2GradientButton1.FillColor2 = Color.FromArgb(64, 64, 64);
+            guna2GradientButton1.FocusedColor = Color.FromArgb(64, 0, 64);
+            guna2GradientButton1.Font = new Font("Verdana", 9.75F);
+            guna2GradientButton1.ForeColor = Color.White;
+            guna2GradientButton1.HoverState.FillColor = Color.Gray;
+            guna2GradientButton1.HoverState.FillColor2 = Color.Gray;
+            guna2GradientButton1.Location = new Point(7, 269);
+            guna2GradientButton1.Name = "guna2GradientButton1";
+            guna2GradientButton1.PressedColor = Color.FromArgb(64, 0, 64);
+            guna2GradientButton1.PressedDepth = 50;
+            guna2GradientButton1.ShadowDecoration.BorderRadius = 10;
+            guna2GradientButton1.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
+            guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2GradientButton1.Size = new Size(175, 41);
+            guna2GradientButton1.TabIndex = 12;
+            guna2GradientButton1.Text = "guna2GradientButton1";
+            guna2GradientButton1.Click += guna2GradientButton1_Click;
             // 
-            // pictureBox2
+            // Button2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(9, 165);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(38, 35);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 8;
-            pictureBox2.TabStop = false;
+            Button2.Animated = true;
+            Button2.AnimatedGIF = true;
+            Button2.BorderRadius = 5;
+            Button2.CustomBorderColor = Color.FromArgb(224, 224, 224);
+            Button2.CustomizableEdges = customizableEdges5;
+            Button2.DisabledState.BorderColor = Color.DarkGray;
+            Button2.DisabledState.CustomBorderColor = Color.DarkGray;
+            Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            Button2.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            Button2.FillColor = Color.Gray;
+            Button2.FillColor2 = Color.FromArgb(64, 64, 64);
+            Button2.FocusedColor = Color.FromArgb(64, 0, 64);
+            Button2.Font = new Font("Verdana", 9.75F);
+            Button2.ForeColor = Color.White;
+            Button2.HoverState.FillColor = Color.Gray;
+            Button2.HoverState.FillColor2 = Color.Gray;
+            Button2.Location = new Point(7, 200);
+            Button2.Name = "Button2";
+            Button2.PressedColor = Color.FromArgb(64, 0, 64);
+            Button2.PressedDepth = 50;
+            Button2.ShadowDecoration.BorderRadius = 10;
+            Button2.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
+            Button2.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            Button2.Size = new Size(175, 41);
+            Button2.TabIndex = 11;
+            Button2.Text = "guna2GradientButton1";
+            Button2.Click += Button2_Click;
             // 
-            // pictureBox1
+            // linkLabel1
             // 
-            pictureBox1.Image = Properties.Resources.icons8_zuhause_100;
-            pictureBox1.Location = new Point(9, 121);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(38, 35);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 7;
-            pictureBox1.TabStop = false;
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Verdana", 9.75F);
+            linkLabel1.LinkColor = Color.Silver;
+            linkLabel1.Location = new Point(33, 44);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(115, 16);
+            linkLabel1.TabIndex = 10;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Discord link here";
+            linkLabel1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button5
+            // label1
             // 
-            button5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button5.BackColor = Color.FromArgb(64, 64, 64);
-            button5.BackgroundImageLayout = ImageLayout.None;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Tahoma", 9.75F);
-            button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(7, 280);
-            button5.Name = "button5";
-            button5.Size = new Size(175, 41);
-            button5.TabIndex = 6;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = false;
+            label1.AutoSize = true;
+            label1.Font = new Font("Verdana", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(13, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(160, 25);
+            label1.TabIndex = 3;
+            label1.Text = "Basic Layout";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(7, 97);
+            label4.FlatStyle = FlatStyle.Flat;
+            label4.Font = new Font("Viner Hand ITC", 12F);
+            label4.ForeColor = Color.Gray;
+            label4.Location = new Point(7, 125);
             label4.Name = "label4";
-            label4.Size = new Size(37, 16);
+            label4.Size = new Size(54, 26);
             label4.TabIndex = 5;
             label4.Text = "Main";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Tahoma", 9.75F, FontStyle.Bold);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(7, 213);
+            label3.FlatStyle = FlatStyle.Flat;
+            label3.Font = new Font("Viner Hand ITC", 12F);
+            label3.ForeColor = Color.Gray;
+            label3.Location = new Point(7, 244);
             label3.Name = "label3";
-            label3.Size = new Size(35, 16);
+            label3.Size = new Size(45, 26);
             label3.TabIndex = 4;
             label3.Text = "Misc";
             // 
-            // button3
+            // button1
             // 
-            button3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button3.BackColor = Color.FromArgb(64, 64, 64);
-            button3.BackgroundImageLayout = ImageLayout.None;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Tahoma", 9.75F);
-            button3.ForeColor = SystemColors.ButtonHighlight;
-            button3.Location = new Point(7, 236);
-            button3.Name = "button3";
-            button3.Size = new Size(175, 41);
-            button3.TabIndex = 2;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(9, 12);
-            label1.Name = "label1";
-            label1.Size = new Size(96, 19);
-            label1.TabIndex = 3;
-            label1.Text = "Basic Layout";
+            button1.Animated = true;
+            button1.AnimatedGIF = true;
+            button1.BorderRadius = 5;
+            button1.CustomBorderColor = Color.FromArgb(224, 224, 224);
+            button1.CustomizableEdges = customizableEdges7;
+            button1.DisabledState.BorderColor = Color.DarkGray;
+            button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            button1.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            button1.FillColor = Color.Gray;
+            button1.FillColor2 = Color.FromArgb(64, 64, 64);
+            button1.FocusedColor = Color.FromArgb(64, 0, 64);
+            button1.Font = new Font("Verdana", 9.75F);
+            button1.ForeColor = Color.White;
+            button1.HoverState.FillColor = Color.Gray;
+            button1.HoverState.FillColor2 = Color.Gray;
+            button1.Location = new Point(7, 153);
+            button1.Name = "button1";
+            button1.PressedColor = Color.FromArgb(64, 0, 64);
+            button1.PressedDepth = 50;
+            button1.ShadowDecoration.BorderRadius = 10;
+            button1.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
+            button1.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            button1.Size = new Size(175, 41);
+            button1.TabIndex = 1;
+            button1.Text = "guna2GradientButton1";
+            button1.Click += button1_Click_1;
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(43, 43, 43);
-            panel2.Controls.Add(label1);
+            panel2.Controls.Add(button4);
             panel2.Controls.Add(button6);
-            panel2.Location = new Point(-1, -1);
+            panel2.Location = new Point(187, -1);
             panel2.Name = "panel2";
-            panel2.Size = new Size(802, 44);
+            panel2.Size = new Size(614, 44);
             panel2.TabIndex = 5;
             panel2.Paint += panel2_Paint;
             panel2.MouseDown += panel2_MouseDown;
@@ -262,7 +296,7 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button6.ForeColor = Color.White;
-            button6.Location = new Point(734, 9);
+            button6.Location = new Point(547, 9);
             button6.Name = "button6";
             button6.Size = new Size(26, 26);
             button6.TabIndex = 6;
@@ -276,7 +310,6 @@
             BackColor = Color.FromArgb(43, 43, 43);
             ClientSize = new Size(800, 450);
             ControlBox = false;
-            Controls.Add(button4);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(mainpanel);
@@ -291,33 +324,24 @@
             mainpanel.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button button1;
-        private Button button2;
         private Panel mainpanel;
         private Panel panel1;
         private Button button4;
         private Label label1;
         private Label label2;
         private Panel panel2;
-        private PictureBox pictureBox1;
-        private Button button5;
         private Label label4;
         private Label label3;
-        private Button button3;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox2;
         private Button button6;
+        private Guna.UI2.WinForms.Guna2GradientButton button1;
+        private LinkLabel linkLabel1;
+        private Guna.UI2.WinForms.Guna2GradientButton Button2;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
     }
 }

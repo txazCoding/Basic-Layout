@@ -41,22 +41,6 @@ namespace Remote
             f.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            loadform(new Form2());
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            loadform(new Form3());
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            loadform(new Form4());
-
-        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -77,6 +61,32 @@ namespace Remote
         private void button6_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            loadform(new Form2());
+
+        }
+
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            loadform(new Form3());
+
+        }
+
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+            loadform(new Form4());
+
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            loadform(new Form4());
+
         }
     }
 }
