@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button4 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -41,24 +40,11 @@
             label1.TabIndex = 0;
             label1.Text = "Page 2";
             // 
-            // button4
-            // 
-            button4.BackColor = Color.White;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(762, 12);
-            button4.Name = "button4";
-            button4.Size = new Size(26, 26);
-            button4.TabIndex = 3;
-            button4.Text = "X";
-            button4.UseVisualStyleBackColor = false;
-            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button4);
+            ClientSize = new Size(614, 407);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form3";
@@ -70,6 +56,5 @@
         #endregion
 
         private Label label1;
-        private Button button4;
     }
 }
