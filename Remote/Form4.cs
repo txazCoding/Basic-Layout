@@ -1,25 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace Remote
 {
     public partial class Form4 : Form
     {
+        // Define a separate variable to store the URL
+        private string url = "https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran";
+
+
         public Form4()
         {
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }
