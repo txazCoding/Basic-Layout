@@ -104,7 +104,7 @@
             lblUsername.AutoSize = true;
             lblUsername.Font = new Font("Microsoft YaHei", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblUsername.ForeColor = Color.White;
-            lblUsername.Location = new Point(235, 175);
+            lblUsername.Location = new Point(231, 175);
             lblUsername.Name = "lblUsername";
             lblUsername.Size = new Size(167, 25);
             lblUsername.TabIndex = 0;
@@ -120,6 +120,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(614, 44);
             panel2.TabIndex = 5;
+            panel2.Paint += panel2_Paint;
             panel2.MouseDown += panel2_MouseDown;
             // 
             // guna2GradientButton4
@@ -200,7 +201,7 @@
             btnOpenForm1.AnimatedGIF = true;
             btnOpenForm1.BackColor = Color.Transparent;
             btnOpenForm1.BorderColor = Color.WhiteSmoke;
-            btnOpenForm1.BorderRadius = 5;
+            btnOpenForm1.BorderRadius = 3;
             btnOpenForm1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             btnOpenForm1.BorderThickness = 1;
             btnOpenForm1.CustomBorderColor = Color.White;
@@ -292,7 +293,7 @@
             btnOpenForm2.AnimatedGIF = true;
             btnOpenForm2.BackColor = Color.Transparent;
             btnOpenForm2.BorderColor = Color.WhiteSmoke;
-            btnOpenForm2.BorderRadius = 5;
+            btnOpenForm2.BorderRadius = 3;
             btnOpenForm2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             btnOpenForm2.BorderThickness = 1;
             btnOpenForm2.CustomBorderColor = Color.White;
@@ -331,7 +332,7 @@
             btnOpenForm3.AnimatedGIF = true;
             btnOpenForm3.BackColor = Color.Transparent;
             btnOpenForm3.BorderColor = Color.WhiteSmoke;
-            btnOpenForm3.BorderRadius = 5;
+            btnOpenForm3.BorderRadius = 3;
             btnOpenForm3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             btnOpenForm3.BorderThickness = 1;
             btnOpenForm3.CustomBorderColor = Color.White;
@@ -370,7 +371,7 @@
             btnOpenForm4.AnimatedGIF = true;
             btnOpenForm4.BackColor = Color.Transparent;
             btnOpenForm4.BorderColor = Color.WhiteSmoke;
-            btnOpenForm4.BorderRadius = 5;
+            btnOpenForm4.BorderRadius = 3;
             btnOpenForm4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             btnOpenForm4.BorderThickness = 1;
             btnOpenForm4.CustomBorderColor = Color.White;

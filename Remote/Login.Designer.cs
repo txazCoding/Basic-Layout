@@ -31,6 +31,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             txtUsername = new TextBox();
             txtPassword = new TextBox();
             btnLogin = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -38,6 +42,9 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
+            guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            panel2 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -141,6 +148,89 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 17;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
+            // guna2GradientButton4
+            // 
+            guna2GradientButton4.Animated = true;
+            guna2GradientButton4.AnimatedGIF = true;
+            guna2GradientButton4.BackColor = Color.Transparent;
+            guna2GradientButton4.BorderColor = Color.WhiteSmoke;
+            guna2GradientButton4.BorderRadius = 5;
+            guna2GradientButton4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            guna2GradientButton4.BorderThickness = 1;
+            guna2GradientButton4.CustomBorderColor = Color.White;
+            guna2GradientButton4.CustomizableEdges = customizableEdges3;
+            guna2GradientButton4.DisabledState.BorderColor = Color.DarkGray;
+            guna2GradientButton4.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2GradientButton4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2GradientButton4.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            guna2GradientButton4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2GradientButton4.FillColor = Color.FromArgb(64, 64, 64);
+            guna2GradientButton4.FillColor2 = Color.FromArgb(64, 64, 64);
+            guna2GradientButton4.FocusedColor = Color.FromArgb(64, 0, 64);
+            guna2GradientButton4.Font = new Font("Verdana", 9.75F);
+            guna2GradientButton4.ForeColor = Color.White;
+            guna2GradientButton4.HoverState.FillColor = Color.Gray;
+            guna2GradientButton4.HoverState.FillColor2 = Color.Gray;
+            guna2GradientButton4.Location = new Point(762, 12);
+            guna2GradientButton4.Name = "guna2GradientButton4";
+            guna2GradientButton4.PressedColor = Color.FromArgb(64, 0, 64);
+            guna2GradientButton4.PressedDepth = 50;
+            guna2GradientButton4.ShadowDecoration.BorderRadius = 10;
+            guna2GradientButton4.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
+            guna2GradientButton4.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2GradientButton4.Size = new Size(26, 26);
+            guna2GradientButton4.TabIndex = 19;
+            guna2GradientButton4.Text = "Button4";
+            guna2GradientButton4.UseTransparentBackground = true;
+            guna2GradientButton4.Click += guna2GradientButton4_Click;
+            // 
+            // guna2GradientButton3
+            // 
+            guna2GradientButton3.Animated = true;
+            guna2GradientButton3.AnimatedGIF = true;
+            guna2GradientButton3.BackColor = Color.Transparent;
+            guna2GradientButton3.BorderColor = Color.WhiteSmoke;
+            guna2GradientButton3.BorderRadius = 5;
+            guna2GradientButton3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            guna2GradientButton3.BorderThickness = 1;
+            guna2GradientButton3.CustomBorderColor = Color.White;
+            guna2GradientButton3.CustomizableEdges = customizableEdges5;
+            guna2GradientButton3.DisabledState.BorderColor = Color.DarkGray;
+            guna2GradientButton3.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2GradientButton3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2GradientButton3.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            guna2GradientButton3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2GradientButton3.FillColor = Color.FromArgb(64, 64, 64);
+            guna2GradientButton3.FillColor2 = Color.FromArgb(64, 64, 64);
+            guna2GradientButton3.FocusedColor = Color.FromArgb(64, 0, 64);
+            guna2GradientButton3.Font = new Font("Verdana", 9.75F);
+            guna2GradientButton3.ForeColor = Color.White;
+            guna2GradientButton3.HoverState.FillColor = Color.Gray;
+            guna2GradientButton3.HoverState.FillColor2 = Color.Gray;
+            guna2GradientButton3.Location = new Point(730, 12);
+            guna2GradientButton3.Name = "guna2GradientButton3";
+            guna2GradientButton3.PressedColor = Color.FromArgb(64, 0, 64);
+            guna2GradientButton3.PressedDepth = 50;
+            guna2GradientButton3.ShadowDecoration.BorderRadius = 10;
+            guna2GradientButton3.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
+            guna2GradientButton3.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            guna2GradientButton3.Size = new Size(26, 26);
+            guna2GradientButton3.TabIndex = 18;
+            guna2GradientButton3.Text = "Button4";
+            guna2GradientButton3.UseTransparentBackground = true;
+            guna2GradientButton3.Click += guna2GradientButton3_Click;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(43, 43, 43);
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(799, 49);
+            panel2.TabIndex = 20;
+            panel2.Paint += panel2_Paint;
+            panel2.MouseDown += panel2_MouseDown;
             // 
             // Login
             // 
@@ -148,6 +238,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(800, 450);
+            Controls.Add(guna2GradientButton4);
+            Controls.Add(guna2GradientButton3);
+            Controls.Add(panel2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(GlowLabel);
@@ -173,5 +266,8 @@
         private Label label1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+        private Panel panel2;
     }
 }
