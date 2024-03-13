@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Remote
 {
@@ -22,6 +23,12 @@ namespace Remote
         {
             InitializeComponent();
             AnimateForm();
+        }
+
+        public Form1(string username) : this()
+        {
+            // Set the username label text
+            lblUsername.Text = "Welcome, " + username + "!";
         }
 
         private void AnimateForm()

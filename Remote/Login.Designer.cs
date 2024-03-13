@@ -92,6 +92,7 @@
             btnLogin.TabIndex = 13;
             btnLogin.Text = "Login";
             btnLogin.UseTransparentBackground = true;
+            btnLogin.Click += btnLogin_Click_1;
             // 
             // GlowLabel
             // 

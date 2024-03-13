@@ -10,7 +10,8 @@ namespace Remote
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
         {
             // Retrieve username and password entered by the user
             string username = txtUsername.Text;
@@ -26,9 +27,15 @@ namespace Remote
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide(); // Hide the login form
 
+
+                // Show the main form and pass the username
+
                 // Start the main application message loop with Form1
-                var myForm = new Form1();
+                var myForm = new Form1(username);
                 myForm.Show();
+
+
+
             }
             else
             {
