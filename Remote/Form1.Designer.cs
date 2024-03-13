@@ -104,11 +104,11 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft YaHei", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(281, 171);
+            label2.Location = new Point(235, 175);
             label2.Name = "label2";
-            label2.Size = new Size(46, 25);
+            label2.Size = new Size(167, 25);
             label2.TabIndex = 0;
-            label2.Text = "hi :)";
+            label2.Text = "Hello :Namehere";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel2

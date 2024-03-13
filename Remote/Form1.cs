@@ -1,6 +1,5 @@
 using System;
 using System.Drawing;
-using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -8,6 +7,9 @@ namespace Remote
 {
     public partial class Form1 : Form
     {
+        private System.Windows.Forms.Timer timer; // Add System.Windows.Forms namespace
+        private double opacityIncrement = 0.05;
+
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
@@ -19,6 +21,33 @@ namespace Remote
         public Form1()
         {
             InitializeComponent();
+            AnimateForm();
+        }
+
+        private void AnimateForm()
+        {
+            // Set the initial opacity to 0
+            this.Opacity = 0;
+
+            // Create a timer for the animation
+            timer = new System.Windows.Forms.Timer(); // Use System.Windows.Forms.Timer
+            timer.Interval = 25;
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            // Increase opacity gradually until it reaches 1
+            if (this.Opacity < 1)
+            {
+                this.Opacity += opacityIncrement;
+            }
+            else
+            {
+                // Stop the timer when opacity reaches 1
+                timer.Stop();
+            }
         }
 
         private void loadForm(Form form)
@@ -71,11 +100,9 @@ namespace Remote
         private void label1_Click(object sender, EventArgs e)
         {
             label1.BackColor = Color.Transparent;
-
         }
     }
 
-    // Custom label with glow effect
     // Custom label with glow effect
     public class CustomLabelWithGlow : Label
     {
@@ -86,7 +113,5 @@ namespace Remote
             TextAlign = ContentAlignment.MiddleCenter;
             Font = new Font(Font.FontFamily, 12f, FontStyle.Bold);
         }
-
     }
-
 }
