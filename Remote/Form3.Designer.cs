@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             label2 = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // label2
@@ -42,12 +43,24 @@
             label2.TabIndex = 2;
             label2.Text = "Keybinds";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(261, 186);
+            label1.Name = "label1";
+            label1.Size = new Size(86, 17);
+            label1.TabIndex = 3;
+            label1.Text = "Put shit here";
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(43, 43, 43);
             ClientSize = new Size(614, 411);
+            Controls.Add(label1);
             Controls.Add(label2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form3";
@@ -59,5 +72,6 @@
         #endregion
 
         private Label label2;
+        private Label label1;
     }
 }
