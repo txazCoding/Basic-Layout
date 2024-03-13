@@ -102,16 +102,4 @@ namespace Remote
             label1.BackColor = Color.Transparent;
         }
     }
-
-    // Custom label with glow effect
-    public class CustomLabelWithGlow : Label
-    {
-        public CustomLabelWithGlow()
-        {
-            // Set label properties
-            AutoSize = false;
-            TextAlign = ContentAlignment.MiddleCenter;
-            Font = new Font(Font.FontFamily, 12f, FontStyle.Bold);
-        }
-    }
 }
