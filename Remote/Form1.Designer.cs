@@ -2,6 +2,7 @@
 {
     partial class Form1
     {
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -36,33 +37,57 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             mainpanel = new Panel();
+            pictureBox2 = new PictureBox();
             label2 = new Label();
-            button4 = new Button();
-            panel1 = new Panel();
-            guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            Button2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            linkLabel1 = new LinkLabel();
-            label1 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            button1 = new Guna.UI2.WinForms.Guna2GradientButton();
             panel2 = new Panel();
-            button6 = new Button();
+            guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
+            guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            btnOpenForm1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            label3 = new Label();
+            label4 = new Label();
+            GlowLabel = new Label();
+            linkLabel1 = new LinkLabel();
+            btnOpenForm2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            btnOpenForm3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            btnOpenForm4 = new Guna.UI2.WinForms.Guna2GradientButton();
+            panel1 = new Panel();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox3 = new PictureBox();
             mainpanel.SuspendLayout();
-            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // mainpanel
             // 
             mainpanel.BackColor = Color.FromArgb(43, 43, 43);
+            mainpanel.Controls.Add(pictureBox3);
+            mainpanel.Controls.Add(pictureBox2);
             mainpanel.Controls.Add(label2);
             mainpanel.Location = new Point(187, 40);
             mainpanel.Name = "mainpanel";
             mainpanel.Size = new Size(614, 411);
             mainpanel.TabIndex = 3;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(-26, 374);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(703, 56);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 16;
+            pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -76,164 +101,128 @@
             label2.Text = "hi :)";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button4
+            // panel2
             // 
-            button4.BackColor = Color.Transparent;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(579, 9);
-            button4.Name = "button4";
-            button4.Size = new Size(26, 26);
-            button4.TabIndex = 0;
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            panel2.BackColor = Color.FromArgb(43, 43, 43);
+            panel2.Controls.Add(guna2GradientButton4);
+            panel2.Controls.Add(guna2GradientButton3);
+            panel2.Location = new Point(187, -1);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(614, 44);
+            panel2.TabIndex = 5;
+            panel2.MouseDown += panel2_MouseDown;
             // 
-            // panel1
+            // guna2GradientButton4
             // 
-            panel1.BackColor = Color.FromArgb(64, 64, 64);
-            panel1.Controls.Add(guna2GradientButton2);
-            panel1.Controls.Add(guna2GradientButton1);
-            panel1.Controls.Add(Button2);
-            panel1.Controls.Add(linkLabel1);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(button1);
-            panel1.Location = new Point(-1, -1);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(188, 452);
-            panel1.TabIndex = 4;
+            guna2GradientButton4.Animated = true;
+            guna2GradientButton4.AnimatedGIF = true;
+            guna2GradientButton4.BackColor = Color.Transparent;
+            guna2GradientButton4.BorderColor = Color.WhiteSmoke;
+            guna2GradientButton4.BorderRadius = 5;
+            guna2GradientButton4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            guna2GradientButton4.BorderThickness = 1;
+            guna2GradientButton4.CustomBorderColor = Color.White;
+            guna2GradientButton4.CustomizableEdges = customizableEdges1;
+            guna2GradientButton4.DisabledState.BorderColor = Color.DarkGray;
+            guna2GradientButton4.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2GradientButton4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2GradientButton4.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            guna2GradientButton4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2GradientButton4.FillColor = Color.FromArgb(64, 64, 64);
+            guna2GradientButton4.FillColor2 = Color.FromArgb(64, 64, 64);
+            guna2GradientButton4.FocusedColor = Color.FromArgb(64, 0, 64);
+            guna2GradientButton4.Font = new Font("Verdana", 9.75F);
+            guna2GradientButton4.ForeColor = Color.White;
+            guna2GradientButton4.HoverState.FillColor = Color.Gray;
+            guna2GradientButton4.HoverState.FillColor2 = Color.Gray;
+            guna2GradientButton4.Location = new Point(580, 9);
+            guna2GradientButton4.Name = "guna2GradientButton4";
+            guna2GradientButton4.PressedColor = Color.FromArgb(64, 0, 64);
+            guna2GradientButton4.PressedDepth = 50;
+            guna2GradientButton4.ShadowDecoration.BorderRadius = 10;
+            guna2GradientButton4.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
+            guna2GradientButton4.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            guna2GradientButton4.Size = new Size(26, 26);
+            guna2GradientButton4.TabIndex = 15;
+            guna2GradientButton4.Text = "Button4";
+            guna2GradientButton4.UseTransparentBackground = true;
+            guna2GradientButton4.Click += guna2GradientButton4_Click;
             // 
-            // guna2GradientButton2
+            // guna2GradientButton3
             // 
-            guna2GradientButton2.Animated = true;
-            guna2GradientButton2.AnimatedGIF = true;
-            guna2GradientButton2.BorderRadius = 5;
-            guna2GradientButton2.CustomBorderColor = Color.FromArgb(224, 224, 224);
-            guna2GradientButton2.CustomizableEdges = customizableEdges1;
-            guna2GradientButton2.DisabledState.BorderColor = Color.DarkGray;
-            guna2GradientButton2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2GradientButton2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2GradientButton2.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            guna2GradientButton2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton2.FillColor = Color.Gray;
-            guna2GradientButton2.FillColor2 = Color.FromArgb(64, 64, 64);
-            guna2GradientButton2.FocusedColor = Color.FromArgb(64, 0, 64);
-            guna2GradientButton2.Font = new Font("Verdana", 9.75F);
-            guna2GradientButton2.ForeColor = Color.White;
-            guna2GradientButton2.HoverState.FillColor = Color.Gray;
-            guna2GradientButton2.HoverState.FillColor2 = Color.Gray;
-            guna2GradientButton2.Location = new Point(7, 316);
-            guna2GradientButton2.Name = "guna2GradientButton2";
-            guna2GradientButton2.PressedColor = Color.FromArgb(64, 0, 64);
-            guna2GradientButton2.PressedDepth = 50;
-            guna2GradientButton2.ShadowDecoration.BorderRadius = 10;
-            guna2GradientButton2.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
-            guna2GradientButton2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2GradientButton2.Size = new Size(175, 41);
-            guna2GradientButton2.TabIndex = 13;
-            guna2GradientButton2.Text = "guna2GradientButton2";
-            guna2GradientButton2.Click += guna2GradientButton2_Click;
+            guna2GradientButton3.Animated = true;
+            guna2GradientButton3.AnimatedGIF = true;
+            guna2GradientButton3.BackColor = Color.Transparent;
+            guna2GradientButton3.BorderColor = Color.WhiteSmoke;
+            guna2GradientButton3.BorderRadius = 5;
+            guna2GradientButton3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            guna2GradientButton3.BorderThickness = 1;
+            guna2GradientButton3.CustomBorderColor = Color.White;
+            guna2GradientButton3.CustomizableEdges = customizableEdges3;
+            guna2GradientButton3.DisabledState.BorderColor = Color.DarkGray;
+            guna2GradientButton3.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2GradientButton3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2GradientButton3.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            guna2GradientButton3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2GradientButton3.FillColor = Color.FromArgb(64, 64, 64);
+            guna2GradientButton3.FillColor2 = Color.FromArgb(64, 64, 64);
+            guna2GradientButton3.FocusedColor = Color.FromArgb(64, 0, 64);
+            guna2GradientButton3.Font = new Font("Verdana", 9.75F);
+            guna2GradientButton3.ForeColor = Color.White;
+            guna2GradientButton3.HoverState.FillColor = Color.Gray;
+            guna2GradientButton3.HoverState.FillColor2 = Color.Gray;
+            guna2GradientButton3.Location = new Point(548, 9);
+            guna2GradientButton3.Name = "guna2GradientButton3";
+            guna2GradientButton3.PressedColor = Color.FromArgb(64, 0, 64);
+            guna2GradientButton3.PressedDepth = 50;
+            guna2GradientButton3.ShadowDecoration.BorderRadius = 10;
+            guna2GradientButton3.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
+            guna2GradientButton3.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2GradientButton3.Size = new Size(26, 26);
+            guna2GradientButton3.TabIndex = 14;
+            guna2GradientButton3.Text = "Button4";
+            guna2GradientButton3.UseTransparentBackground = true;
+            guna2GradientButton3.Click += guna2GradientButton3_Click;
             // 
-            // guna2GradientButton1
+            // btnOpenForm1
             // 
-            guna2GradientButton1.Animated = true;
-            guna2GradientButton1.AnimatedGIF = true;
-            guna2GradientButton1.BorderRadius = 5;
-            guna2GradientButton1.CustomBorderColor = Color.FromArgb(224, 224, 224);
-            guna2GradientButton1.CustomizableEdges = customizableEdges3;
-            guna2GradientButton1.DisabledState.BorderColor = Color.DarkGray;
-            guna2GradientButton1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2GradientButton1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2GradientButton1.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            guna2GradientButton1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2GradientButton1.FillColor = Color.Gray;
-            guna2GradientButton1.FillColor2 = Color.FromArgb(64, 64, 64);
-            guna2GradientButton1.FocusedColor = Color.FromArgb(64, 0, 64);
-            guna2GradientButton1.Font = new Font("Verdana", 9.75F);
-            guna2GradientButton1.ForeColor = Color.White;
-            guna2GradientButton1.HoverState.FillColor = Color.Gray;
-            guna2GradientButton1.HoverState.FillColor2 = Color.Gray;
-            guna2GradientButton1.Location = new Point(7, 269);
-            guna2GradientButton1.Name = "guna2GradientButton1";
-            guna2GradientButton1.PressedColor = Color.FromArgb(64, 0, 64);
-            guna2GradientButton1.PressedDepth = 50;
-            guna2GradientButton1.ShadowDecoration.BorderRadius = 10;
-            guna2GradientButton1.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
-            guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2GradientButton1.Size = new Size(175, 41);
-            guna2GradientButton1.TabIndex = 12;
-            guna2GradientButton1.Text = "guna2GradientButton1";
-            guna2GradientButton1.Click += guna2GradientButton1_Click;
-            // 
-            // Button2
-            // 
-            Button2.Animated = true;
-            Button2.AnimatedGIF = true;
-            Button2.BorderRadius = 5;
-            Button2.CustomBorderColor = Color.FromArgb(224, 224, 224);
-            Button2.CustomizableEdges = customizableEdges5;
-            Button2.DisabledState.BorderColor = Color.DarkGray;
-            Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            Button2.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            Button2.FillColor = Color.Gray;
-            Button2.FillColor2 = Color.FromArgb(64, 64, 64);
-            Button2.FocusedColor = Color.FromArgb(64, 0, 64);
-            Button2.Font = new Font("Verdana", 9.75F);
-            Button2.ForeColor = Color.White;
-            Button2.HoverState.FillColor = Color.Gray;
-            Button2.HoverState.FillColor2 = Color.Gray;
-            Button2.Location = new Point(7, 200);
-            Button2.Name = "Button2";
-            Button2.PressedColor = Color.FromArgb(64, 0, 64);
-            Button2.PressedDepth = 50;
-            Button2.ShadowDecoration.BorderRadius = 10;
-            Button2.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
-            Button2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            Button2.Size = new Size(175, 41);
-            Button2.TabIndex = 11;
-            Button2.Text = "guna2GradientButton1";
-            Button2.Click += Button2_Click;
-            // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("Verdana", 9.75F);
-            linkLabel1.LinkColor = Color.Silver;
-            linkLabel1.Location = new Point(33, 44);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(115, 16);
-            linkLabel1.TabIndex = 10;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Discord link here";
-            linkLabel1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(13, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(160, 25);
-            label1.TabIndex = 3;
-            label1.Text = "Basic Layout";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.FlatStyle = FlatStyle.Flat;
-            label4.Font = new Font("Viner Hand ITC", 12F);
-            label4.ForeColor = Color.Gray;
-            label4.Location = new Point(7, 125);
-            label4.Name = "label4";
-            label4.Size = new Size(54, 26);
-            label4.TabIndex = 5;
-            label4.Text = "Main";
+            btnOpenForm1.Animated = true;
+            btnOpenForm1.AnimatedGIF = true;
+            btnOpenForm1.BackColor = Color.Transparent;
+            btnOpenForm1.BorderColor = Color.WhiteSmoke;
+            btnOpenForm1.BorderRadius = 5;
+            btnOpenForm1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnOpenForm1.BorderThickness = 1;
+            btnOpenForm1.CustomBorderColor = Color.White;
+            btnOpenForm1.CustomizableEdges = customizableEdges5;
+            btnOpenForm1.DisabledState.BorderColor = Color.DarkGray;
+            btnOpenForm1.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnOpenForm1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnOpenForm1.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            btnOpenForm1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnOpenForm1.FillColor = Color.FromArgb(64, 64, 64);
+            btnOpenForm1.FillColor2 = Color.FromArgb(64, 64, 64);
+            btnOpenForm1.FocusedColor = Color.FromArgb(64, 0, 64);
+            btnOpenForm1.Font = new Font("Verdana", 9.75F);
+            btnOpenForm1.ForeColor = Color.White;
+            btnOpenForm1.HoverState.FillColor = Color.Gray;
+            btnOpenForm1.HoverState.FillColor2 = Color.Gray;
+            btnOpenForm1.HoverState.Font = new Font("Verdana", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnOpenForm1.Image = (Image)resources.GetObject("btnOpenForm1.Image");
+            btnOpenForm1.ImageAlign = HorizontalAlignment.Left;
+            btnOpenForm1.Location = new Point(7, 153);
+            btnOpenForm1.Name = "btnOpenForm1";
+            btnOpenForm1.PressedColor = Color.FromArgb(64, 0, 64);
+            btnOpenForm1.PressedDepth = 80;
+            btnOpenForm1.ShadowDecoration.BorderRadius = 10;
+            btnOpenForm1.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
+            btnOpenForm1.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnOpenForm1.Size = new Size(175, 41);
+            btnOpenForm1.TabIndex = 1;
+            btnOpenForm1.Text = "Button1";
+            btnOpenForm1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit;
+            btnOpenForm1.UseTransparentBackground = true;
+            btnOpenForm1.Click += btnOpenForm1_Click;
             // 
             // label3
             // 
@@ -247,61 +236,211 @@
             label3.TabIndex = 4;
             label3.Text = "Misc";
             // 
-            // button1
+            // label4
             // 
-            button1.Animated = true;
-            button1.AnimatedGIF = true;
-            button1.BorderRadius = 5;
-            button1.CustomBorderColor = Color.FromArgb(224, 224, 224);
-            button1.CustomizableEdges = customizableEdges7;
-            button1.DisabledState.BorderColor = Color.DarkGray;
-            button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            button1.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
-            button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            button1.FillColor = Color.Gray;
-            button1.FillColor2 = Color.FromArgb(64, 64, 64);
-            button1.FocusedColor = Color.FromArgb(64, 0, 64);
-            button1.Font = new Font("Verdana", 9.75F);
-            button1.ForeColor = Color.White;
-            button1.HoverState.FillColor = Color.Gray;
-            button1.HoverState.FillColor2 = Color.Gray;
-            button1.Location = new Point(7, 153);
-            button1.Name = "button1";
-            button1.PressedColor = Color.FromArgb(64, 0, 64);
-            button1.PressedDepth = 50;
-            button1.ShadowDecoration.BorderRadius = 10;
-            button1.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
-            button1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            button1.Size = new Size(175, 41);
-            button1.TabIndex = 1;
-            button1.Text = "guna2GradientButton1";
-            button1.Click += button1_Click_1;
+            label4.AutoSize = true;
+            label4.FlatStyle = FlatStyle.Flat;
+            label4.Font = new Font("Viner Hand ITC", 12F);
+            label4.ForeColor = Color.Gray;
+            label4.Location = new Point(7, 125);
+            label4.Name = "label4";
+            label4.Size = new Size(54, 26);
+            label4.TabIndex = 5;
+            label4.Text = "Main";
             // 
-            // panel2
+            // GlowLabel
             // 
-            panel2.BackColor = Color.FromArgb(43, 43, 43);
-            panel2.Controls.Add(button4);
-            panel2.Controls.Add(button6);
-            panel2.Location = new Point(187, -1);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(614, 44);
-            panel2.TabIndex = 5;
-            panel2.Paint += panel2_Paint;
-            panel2.MouseDown += panel2_MouseDown;
+            GlowLabel.AutoSize = true;
+            GlowLabel.BackColor = Color.Transparent;
+            GlowLabel.CausesValidation = false;
+            GlowLabel.Font = new Font("Verdana", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            GlowLabel.ForeColor = Color.White;
+            GlowLabel.Location = new Point(13, 10);
+            GlowLabel.Name = "GlowLabel";
+            GlowLabel.Size = new Size(160, 25);
+            GlowLabel.TabIndex = 3;
+            GlowLabel.Text = "Basic Layout";
+            GlowLabel.TextAlign = ContentAlignment.MiddleCenter;
+            GlowLabel.Click += label1_Click;
             // 
-            // button6
+            // linkLabel1
             // 
-            button6.BackColor = Color.Transparent;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Tahoma", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(547, 9);
-            button6.Name = "button6";
-            button6.Size = new Size(26, 26);
-            button6.TabIndex = 6;
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Verdana", 9.75F);
+            linkLabel1.LinkColor = Color.Silver;
+            linkLabel1.Location = new Point(33, 41);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(115, 16);
+            linkLabel1.TabIndex = 10;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Discord link here";
+            linkLabel1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btnOpenForm2
+            // 
+            btnOpenForm2.Animated = true;
+            btnOpenForm2.AnimatedGIF = true;
+            btnOpenForm2.BackColor = Color.Transparent;
+            btnOpenForm2.BorderColor = Color.WhiteSmoke;
+            btnOpenForm2.BorderRadius = 5;
+            btnOpenForm2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnOpenForm2.BorderThickness = 1;
+            btnOpenForm2.CustomBorderColor = Color.White;
+            btnOpenForm2.CustomizableEdges = customizableEdges7;
+            btnOpenForm2.DisabledState.BorderColor = Color.DarkGray;
+            btnOpenForm2.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnOpenForm2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnOpenForm2.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            btnOpenForm2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnOpenForm2.FillColor = Color.FromArgb(64, 64, 64);
+            btnOpenForm2.FillColor2 = Color.FromArgb(64, 64, 64);
+            btnOpenForm2.FocusedColor = Color.FromArgb(64, 0, 64);
+            btnOpenForm2.Font = new Font("Verdana", 9.75F);
+            btnOpenForm2.ForeColor = Color.White;
+            btnOpenForm2.HoverState.FillColor = Color.Gray;
+            btnOpenForm2.HoverState.FillColor2 = Color.Gray;
+            btnOpenForm2.HoverState.Font = new Font("Verdana", 9.75F, FontStyle.Bold);
+            btnOpenForm2.Image = (Image)resources.GetObject("btnOpenForm2.Image");
+            btnOpenForm2.ImageAlign = HorizontalAlignment.Left;
+            btnOpenForm2.Location = new Point(7, 200);
+            btnOpenForm2.Name = "btnOpenForm2";
+            btnOpenForm2.PressedColor = Color.FromArgb(64, 0, 64);
+            btnOpenForm2.PressedDepth = 50;
+            btnOpenForm2.ShadowDecoration.BorderRadius = 10;
+            btnOpenForm2.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
+            btnOpenForm2.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnOpenForm2.Size = new Size(175, 41);
+            btnOpenForm2.TabIndex = 11;
+            btnOpenForm2.Text = "Button2";
+            btnOpenForm2.UseTransparentBackground = true;
+            btnOpenForm2.Click += btnOpenForm2_Click;
+            // 
+            // btnOpenForm3
+            // 
+            btnOpenForm3.Animated = true;
+            btnOpenForm3.AnimatedGIF = true;
+            btnOpenForm3.BackColor = Color.Transparent;
+            btnOpenForm3.BorderColor = Color.WhiteSmoke;
+            btnOpenForm3.BorderRadius = 5;
+            btnOpenForm3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnOpenForm3.BorderThickness = 1;
+            btnOpenForm3.CustomBorderColor = Color.White;
+            btnOpenForm3.CustomizableEdges = customizableEdges9;
+            btnOpenForm3.DisabledState.BorderColor = Color.DarkGray;
+            btnOpenForm3.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnOpenForm3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnOpenForm3.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            btnOpenForm3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnOpenForm3.FillColor = Color.FromArgb(64, 64, 64);
+            btnOpenForm3.FillColor2 = Color.FromArgb(64, 64, 64);
+            btnOpenForm3.FocusedColor = Color.FromArgb(64, 0, 64);
+            btnOpenForm3.Font = new Font("Verdana", 9.75F);
+            btnOpenForm3.ForeColor = Color.White;
+            btnOpenForm3.HoverState.FillColor = Color.Gray;
+            btnOpenForm3.HoverState.FillColor2 = Color.Gray;
+            btnOpenForm3.HoverState.Font = new Font("Verdana", 9.75F, FontStyle.Bold);
+            btnOpenForm3.Image = (Image)resources.GetObject("btnOpenForm3.Image");
+            btnOpenForm3.ImageAlign = HorizontalAlignment.Left;
+            btnOpenForm3.Location = new Point(7, 269);
+            btnOpenForm3.Name = "btnOpenForm3";
+            btnOpenForm3.PressedColor = Color.FromArgb(64, 0, 64);
+            btnOpenForm3.PressedDepth = 50;
+            btnOpenForm3.ShadowDecoration.BorderRadius = 10;
+            btnOpenForm3.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
+            btnOpenForm3.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnOpenForm3.Size = new Size(175, 41);
+            btnOpenForm3.TabIndex = 12;
+            btnOpenForm3.Text = "Button3";
+            btnOpenForm3.UseTransparentBackground = true;
+            btnOpenForm3.Click += btnOpenForm3_Click;
+            // 
+            // btnOpenForm4
+            // 
+            btnOpenForm4.Animated = true;
+            btnOpenForm4.AnimatedGIF = true;
+            btnOpenForm4.BackColor = Color.Transparent;
+            btnOpenForm4.BorderColor = Color.WhiteSmoke;
+            btnOpenForm4.BorderRadius = 5;
+            btnOpenForm4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            btnOpenForm4.BorderThickness = 1;
+            btnOpenForm4.CustomBorderColor = Color.White;
+            btnOpenForm4.CustomizableEdges = customizableEdges11;
+            btnOpenForm4.DisabledState.BorderColor = Color.DarkGray;
+            btnOpenForm4.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnOpenForm4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnOpenForm4.DisabledState.FillColor2 = Color.FromArgb(169, 169, 169);
+            btnOpenForm4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnOpenForm4.FillColor = Color.FromArgb(64, 64, 64);
+            btnOpenForm4.FillColor2 = Color.FromArgb(64, 64, 64);
+            btnOpenForm4.FocusedColor = Color.FromArgb(64, 0, 64);
+            btnOpenForm4.Font = new Font("Verdana", 9.75F);
+            btnOpenForm4.ForeColor = Color.White;
+            btnOpenForm4.HoverState.FillColor = Color.Gray;
+            btnOpenForm4.HoverState.FillColor2 = Color.Gray;
+            btnOpenForm4.HoverState.Font = new Font("Verdana", 9.75F, FontStyle.Bold);
+            btnOpenForm4.Image = (Image)resources.GetObject("btnOpenForm4.Image");
+            btnOpenForm4.ImageAlign = HorizontalAlignment.Left;
+            btnOpenForm4.Location = new Point(7, 316);
+            btnOpenForm4.Name = "btnOpenForm4";
+            btnOpenForm4.PressedColor = Color.FromArgb(64, 0, 64);
+            btnOpenForm4.PressedDepth = 50;
+            btnOpenForm4.ShadowDecoration.BorderRadius = 10;
+            btnOpenForm4.ShadowDecoration.Color = Color.FromArgb(64, 0, 64);
+            btnOpenForm4.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnOpenForm4.Size = new Size(175, 41);
+            btnOpenForm4.TabIndex = 13;
+            btnOpenForm4.Text = "Button4";
+            btnOpenForm4.UseTransparentBackground = true;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(64, 64, 64);
+            panel1.Controls.Add(GlowLabel);
+            panel1.Controls.Add(btnOpenForm4);
+            panel1.Controls.Add(btnOpenForm3);
+            panel1.Controls.Add(btnOpenForm2);
+            panel1.Controls.Add(linkLabel1);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(btnOpenForm1);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Location = new Point(-1, -1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(188, 452);
+            panel1.TabIndex = 4;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Verdana", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(13, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(160, 25);
+            label1.TabIndex = 14;
+            label1.Text = "Basic Layout";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(188, 122);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(-26, -23);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(703, 56);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 17;
+            pictureBox3.TabStop = false;
             // 
             // Form1
             // 
@@ -319,29 +458,35 @@
             Name = "Form1";
             SizeGripStyle = SizeGripStyle.Hide;
             Text = "Form1";
-            Load += Form1_Load;
             mainpanel.ResumeLayout(false);
             mainpanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private Panel mainpanel;
-        private Panel panel1;
-        private Button button4;
-        private Label label1;
         private Label label2;
         private Panel panel2;
-        private Label label4;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
+        private Guna.UI2.WinForms.Guna2GradientButton btnOpenForm1;
         private Label label3;
-        private Button button6;
-        private Guna.UI2.WinForms.Guna2GradientButton button1;
+        private Label label4;
+        private Label GlowLabel;
         private LinkLabel linkLabel1;
-        private Guna.UI2.WinForms.Guna2GradientButton Button2;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private Guna.UI2.WinForms.Guna2GradientButton btnOpenForm2;
+        private Guna.UI2.WinForms.Guna2GradientButton btnOpenForm3;
+        private Guna.UI2.WinForms.Guna2GradientButton btnOpenForm4;
+        private Panel panel1;
+        private Label label1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }

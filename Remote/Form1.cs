@@ -1,55 +1,40 @@
-using System.Data;
+using System;
 using System.Drawing;
-using System.Windows.Forms;
-using System.Threading.Tasks;
+using System.Drawing.Drawing2D;
 using System.Runtime.InteropServices;
-
+using System.Windows.Forms;
 
 namespace Remote
 {
     public partial class Form1 : Form
     {
-
         [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
         [DllImport("user32.dll", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
-        bool mousedown;
+        private bool mousedown;
 
         public Form1()
         {
             InitializeComponent();
         }
 
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void loadForm(Form form)
         {
+            // Clear existing controls from the panel
+            mainpanel.Controls.Clear();
 
-        }
+            // Set form properties
+            form.TopLevel = false;
+            form.Dock = DockStyle.Fill;
 
-        public void loadform(object Form)
-        {
-            if (this.mainpanel.Controls.Count > 0)
-                this.mainpanel.Controls.RemoveAt(0);
-            Form f = Form as Form;
-            f.TopLevel = false;
-            f.Dock = DockStyle.Fill;
-            this.mainpanel.Controls.Add(f);
-            this.mainpanel.Tag = f;
-            f.Show();
-        }
+            // Add form to the panel
+            mainpanel.Controls.Add(form);
 
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
+            // Show the form
+            form.Show();
         }
 
         private void panel2_MouseDown(object sender, MouseEventArgs e)
@@ -58,35 +43,50 @@ namespace Remote
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void guna2GradientButton4_Click(object sender, EventArgs e)
         {
-            loadform(new Form2());
-
+            this.Close();
         }
 
-
-        private void Button2_Click(object sender, EventArgs e)
+        private void btnOpenForm1_Click(object sender, EventArgs e)
         {
-            loadform(new Form3());
-
+            loadForm(new Form2());
         }
 
-
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        private void btnOpenForm2_Click(object sender, EventArgs e)
         {
-            loadform(new Form4());
-
+            loadForm(new Form3());
         }
 
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        private void btnOpenForm3_Click(object sender, EventArgs e)
         {
-            loadform(new Form4());
+            loadForm(new Form4());
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            label1.BackColor = Color.Transparent;
 
         }
     }
+
+    // Custom label with glow effect
+    // Custom label with glow effect
+    public class CustomLabelWithGlow : Label
+    {
+        public CustomLabelWithGlow()
+        {
+            // Set label properties
+            AutoSize = false;
+            TextAlign = ContentAlignment.MiddleCenter;
+            Font = new Font(Font.FontFamily, 12f, FontStyle.Bold);
+        }
+
+    }
+
 }

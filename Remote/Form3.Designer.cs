@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
-            // label1
+            // label2
             // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(42, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Page 2";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(12, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(63, 17);
+            label2.TabIndex = 2;
+            label2.Text = "Keybinds";
             // 
             // Form3
             // 
@@ -47,7 +48,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(43, 43, 43);
             ClientSize = new Size(614, 411);
-            Controls.Add(label1);
+            Controls.Add(label2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form3";
             Text = "Form3";
@@ -57,6 +58,6 @@
 
         #endregion
 
-        private Label label1;
+        private Label label2;
     }
 }
